@@ -1,10 +1,18 @@
-# Testing
+<!DOCTYPE html>
+<header>
+  <title>Testing</title>
+  <meta charset="utf-8">
+  <script src="https://distill.pub/template.v1.js"></script>
+</header>
+<body>
+<dt-article>
+<h1>Testing</h1>
 
-This is simply a test of GitHub Markdown support in `gh-pages`.
+<p>This is simply a test of GitHub Markdown support in `gh-pages`.</p>
 
-Let's see.
+<p>Let's see.</p>
 
-```R
+<dt-code block language="r">
 library(tidyverse)
 
 df <- data("mtcars")
@@ -12,20 +20,23 @@ df <- data("mtcars")
 df %>%
   ggplot(aes(cyl, hp)) +
   geom_point()
-```
+</dt-code>
 
 How about Python?
 
-```python
+<dt-code block language="python">
 import numpy as np
 
 x = np.random.rand(100)
-```
+</dt-code>
 
 And Julia?
 
-```julia
+<dt-code block language="julia">
 using Random
 
 x = randn(10, 10)
 ```
+</dt-code>
+</dt-article>
+</body>
